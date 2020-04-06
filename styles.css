@@ -1,13 +1,12 @@
-* {
-    font-family: 'Lato', sans-serif;
-}
+
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
-h1, h2, h3, h4, h5, h6, .nav-link {
+h1, h2, h3, h4, h5, h6, .nav-link, p {
     color:#2C3689;
+    font-family: 'Lato', sans-serif;
 }
 .display-4 {
 
@@ -17,12 +16,23 @@ h1, h2, h3, h4, h5, h6, .nav-link {
 }
 
 .section-img {
-  
+ 
+}
 
+@media only screen and (min-width: 320px) and (max-width: 990px){
+    .section-img {
+        width:150px;
+        height:auto;
+      }
+
+    .section-title {
+        font-size:2rem;
+    }
 }
 
 .navbar {
-    height:80px;
+    min-height:80px;
+   background-color:#c5d0f5;
 }
 
 .navbar-logo {
