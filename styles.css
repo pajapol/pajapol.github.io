@@ -22,7 +22,12 @@ h1, h2, h3, h4, h5, h6, .nav-link, p {
  min-height:520px;
  padding-top:90px !important; 
  padding-bottom:60px !important; 
+ background-color:#3688FF;
 
+}
+
+#customers-bg {
+ background-color:#3688FF;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 990px){
