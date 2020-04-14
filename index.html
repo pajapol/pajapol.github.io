@@ -50,15 +50,16 @@
                     <div class="row" >
                         <div class="col-12 col-lg-6 order-last order-lg-first " >
                                 <div class="jumbotron jumbotron-fluid  pt-0 mt-0 pt-lg-5 mt-lg-5" style="background-color:transparent;">
-                                    <div class="container">
+                                    <div class="container text-center text-lg-left">
 
                                         <h1 class="display-5 mt-4 section-title  text-white" id="home"><b>ATM Prepaid Solutions</b></h1>
                                         <h3 class="mt-0 mt-lg-4 text-white section-sub-header" >
                                         We supply banks with E-load and other prepaid products.
                                         </h3>
                                         <br/>
-                                        <a href="#about-anchor" type="button" class="btn btn-warning btn-lg">Learn More</a>
-
+                                        <div class="d-flex justify-content-center justify-content-lg-start">
+                                            <a href="#about-anchor" type="button" class="btn btn-warning btn-lg">Learn More</a>
+                                        </div>
                                     
                                     </div>
                                 </div>
@@ -235,7 +236,7 @@
         </div>
       
         <div id="our_products">
-            <div class="container mb-5 pb-5">
+            <div class="container mb-5 pb-5 mt-5 mt-lg-0">
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <div class="jumbotron jumbotron-fluid pb-0 bg-transparent">
@@ -292,21 +293,21 @@
                     </div>
                     <div class="col-12 ">
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-m-4 col-lg-4">
+                            <div class="col-12 col-sm-6 col-m-4 col-lg-4 mb-2">
                                 <div class="card client-logo-container" style="background-color:#a0cf67;" >
                                     <div class="card-body text-center">
                                         <h2 class="text-white"><b>SECURITY BANK</b></h2>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-m-4 col-lg-4">
+                            <div class="col-12 col-sm-6 col-m-4 col-lg-4 mb-2">
                                 <div class="card client-logo-container" style="background-color:#0053a0">
                                     <div class="card-body text-center">
                                         <h2 class="text-white"><b>METROBANK</b></h2>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-m-4 col-lg-4">
+                            <div class="col-12 col-sm-6 col-m-4 col-lg-4 mb-2">
                                 <div class="card client-logo-container" style="background-color:#ec5358">
                                     <div class="card-body text-center">
                                         <h2 class="text-white"><b>BANCNET</b></h2>
@@ -395,6 +396,15 @@
             header.css({ 'opacity': 1 });
         }
         
+        });
+
+        $(function(){ 
+            var navMain = $(".navbar-collapse"); // avoid dependency on #id
+            // "a:not([data-toggle])" - to avoid issues caused
+            // when you have dropdown inside navbar
+            navMain.on("click", "a:not([data-toggle])", null, function () {
+                navMain.collapse('hide');
+            });
         });
 
         document.addEventListener("DOMContentLoaded", function(event) { 
