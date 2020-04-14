@@ -58,6 +58,11 @@ h1, h2, h3, h4, h5, h6, .nav-link, p {
     color:#FFCC66 !important;
     font-weight:900;
 }
+.nav-link:hover {
+    color:#FFF !important;
+    font-weight:900;
+}
+
 
 .nav-bg {  
     background-color:#3688FF !important;
