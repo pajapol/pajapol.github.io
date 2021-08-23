@@ -114,6 +114,14 @@ border-radius:20px;
 padding:20px;
 
 }
+
+.team-profile-container {
+    min-width:230px;
+    height:auto;
+    border-radius:230px;
+    padding:0px
+}
+
 .btn-warning {
     background-color: #FFCC66 !important
 }
